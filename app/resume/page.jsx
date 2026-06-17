@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { FaFileDownload } from "react-icons/fa";
+import { FaFileDownload, FaTachometerAlt, FaKeyboard } from "react-icons/fa";
 
 const RESUME_PDF_PATH = "/Resume (5).pdf";
 const MAX_PDF_WIDTH = 950;
@@ -88,13 +88,31 @@ const Resume = () => {
 
     return (
         <div className="max-h-screen overflow-y-auto relative bg-transparent p-4 pb-24 md:pb-10 md:pr-20">
-            <a
-                href={RESUME_PDF_PATH}
-                download="Emmanuel_Dabandan_Resume.pdf"
-                className="fixed bottom-10 right-10 z-50 bg-white rounded-3xl px-4 py-2 flex items-center gap-2"
-            >
-                <FaFileDownload /> Download PDF
-            </a>
+            <div className="fixed bottom-10 right-10 z-50 flex flex-col gap-3 items-end">
+                <a
+                    href="https://www.speedtest.net/result/19322749128" // Replace with your actual speedtest result URL
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white shadow-lg border border-gray-100 rounded-3xl px-4 py-2 flex items-center gap-2 hover:scale-105 transition-transform"
+                >
+                    <FaTachometerAlt className="text-blue-500" /> Speedtest
+                </a>
+                <a
+                    href="https://www.speedtypingonline.com/myResults.php?r=556779704879160&d=934117415518392" // Replace with your actual typing speed result URL
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white shadow-lg border border-gray-100 rounded-3xl px-4 py-2 flex items-center gap-2 hover:scale-105 transition-transform"
+                >
+                    <FaKeyboard className="text-green-500" /> Typing Speed
+                </a>
+                <a
+                    href={RESUME_PDF_PATH}
+                    download="Emmanuel_Dabandan_Resume.pdf"
+                    className="bg-white shadow-lg border border-gray-100 rounded-3xl px-4 py-2 flex items-center gap-2 hover:scale-105 transition-transform"
+                >
+                    <FaFileDownload className="text-red-500" /> Download PDF
+                </a>
+            </div>
 
             {isLoading && <p className="text-center text-black/70 py-6">Loading resume...</p>}
 
