@@ -15,9 +15,7 @@ const ThankYou = () => {
                 Do you have great idea and want to share.
                 <br /> Let’s make it together
             </div>
-            <button className="font-semibold text-[clamp(14px,1.8vw,16px)] leading-tight text-white bg-[#2349FF]/95 rounded-[100px] md:h-15 h-12 px-7.5 hover:bg-[#2349FF] w-fit">
-                Get in touch with me
-            </button>
+            
         </div>
 
     )

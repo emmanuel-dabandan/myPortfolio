@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaFileDownload } from "react-icons/fa";
 
-const RESUME_PDF_PATH = "/resume.pdf";
+const RESUME_PDF_PATH = "/Resume (5).pdf";
 const MAX_PDF_WIDTH = 950;
 
 const Resume = () => {
@@ -90,7 +90,7 @@ const Resume = () => {
         <div className="max-h-screen overflow-y-auto relative bg-transparent p-4 pb-24 md:pb-10 md:pr-20">
             <a
                 href={RESUME_PDF_PATH}
-                download="Mohammad_Gauhar_Resume.pdf"
+                download="Emmanuel_Dabandan_Resume.pdf"
                 className="fixed bottom-10 right-10 z-50 bg-white rounded-3xl px-4 py-2 flex items-center gap-2"
             >
                 <FaFileDownload /> Download PDF

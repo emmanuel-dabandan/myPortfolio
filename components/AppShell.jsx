@@ -11,7 +11,9 @@ const AppShell = ({ children }) => {
     <div className="grid md:grid-cols-[140px_auto] gap-3 h-screen animated-gradient">
       <SmoothToggleBtn {...{ toggle, setToggle }} />
       <Navbar toggle={toggle} setToggle={setToggle} />
-      {children}
+      <main className="overflow-y-auto">
+        {children}
+      </main>
     </div>
   );
 };

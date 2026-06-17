@@ -9,13 +9,7 @@ const ExpCard = ({ exp }) => {
         <CardContainer>
             <div className="p-7 pb-8 grid gap-4">
                 <div>
-                    <div className="md:h-13.75 h-10 md:w-13.75 w-10 rounded-full object-cover">
-                        <Image
-                            className="w-full h-full object-cover"
-                            src={exp.logo}
-                            alt="evallo.ai"
-                        />
-                    </div>
+                    
 
                     {/* Role */}
                     <div className="font-medium text-[clamp(14px,1.8vw,18px)] leading-tight text-[#0A0614] pt-2">

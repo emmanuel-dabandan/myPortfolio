@@ -1,35 +1,34 @@
-// import { SiHtml5, SiCss3, SiJavascript, SiReact, SiRedux, SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb, SiMongoose, SiMysql, SiBootstrap, SiTailwindcss } from "react-icons/si"
 import evallo from "../assets/evallo-logo.png"
-import mcu from "../assets/mcu.png"
-import masai from "../assets/masai.png"
+import cvsu  from "../assets/cvsulogo.png"
+import djprshs from "../assets/djprshslogo.png"
 
 import {
   SiHtml5,
   SiCss3,
   SiJavascript,
   SiReact,
-  SiRedux,
   SiNextdotjs,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
   SiMysql,
   SiBootstrap,
   SiTailwindcss,
   SiGit,
-  SiGitlab,
-  SiPostman,
-  // SiVisualstudiocode,
-  SiAmazonwebservices,
-  // SiMicrosoftazure,
   SiTrello,
-  SiFigma,
   SiSlack,
   SiGoogle,
-  SiJsonwebtokens,
+  SiGooglesheets,
+  SiTableau,
+  SiNotion,
+  SiShopify,
+  SiLoom,
+  SiPostgresql,
+  SiKotlin,
+  SiFastapi,
+  SiPandas,
+  SiNumpy,
+  SiVite,
 
 } from "react-icons/si";
+import { FaMicrosoft, FaFileExcel } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { PiMicrosoftTeamsLogoFill } from "react-icons/pi";
 import { LuUtensilsCrossed } from "react-icons/lu";
@@ -46,35 +45,46 @@ const FigmaIcon = () => {
   )
 }
 
+const GHLIcon = () => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L2 22h20L12 2z" fill="#188BF6" />
+    </svg>
+  )
+}
+
 export const skills = {
   tech: [
     { name: "HTML", Icon: SiHtml5, color: "#E34F26" },
     { name: "CSS", Icon: SiCss3, color: "#1572B6" },
     { name: "JavaScript", Icon: SiJavascript, color: "#F7DF1E" },
     { name: "React.js", Icon: SiReact, color: "#61DAFB" },
-    { name: "Redux Toolkit", Icon: SiRedux, color: "#764ABC" },
     { name: "Next.js", Icon: SiNextdotjs, color: "#000000" },
     { name: "Tailwind CSS", Icon: SiTailwindcss, color: "#06B6D4" },
     { name: "Bootstrap", Icon: SiBootstrap, color: "#7952B3" },
-    { name: "Node.js", Icon: SiNodedotjs, color: "#339933" },
-    { name: "Express.js", Icon: SiExpress, color: "#000000" },
-    { name: "MongoDB", Icon: SiMongodb, color: "#47A248" },
-    { name: "Mongoose", Icon: SiMongoose, color: "#880000" },
     { name: "MySQL", Icon: SiMysql, color: "#4479A1" },
-    { name: "JWT Authentication", Icon: SiJsonwebtokens, color: "#4479A1" },
+    { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
+    { name: "Kotlin", Icon: SiKotlin, color: "#7F52FF" },
+    { name: "FastAPI", Icon: SiFastapi, color: "#009688" },
+    { name: "Pandas", Icon: SiPandas, color: "#150458" },
+    { name: "NumPy", Icon: SiNumpy, color: "#013243" },
+    { name: "Vite", Icon: SiVite, color: "#646CFF" },
   ],
 
   tools: [
     { name: "Git", Icon: SiGit, color: "#F05032" },
-    { name: "GitLab", Icon: SiGitlab, color: "#FC6D26" },
-    // { name: "Postman", Icon: SiPostman, color: "#FF6C37" },
     { name: "VS Code", Icon: VscVscode, color: "#007ACC" },
-    { name: "AWS (EC2, S3)", Icon: SiAmazonwebservices, color: "#FF9900" },
-    // { name: "Microsoft Azure", Icon: PiMicrosoftTeamsLogoFill, color: "#0078D4" },
     { name: "Figma", Icon: FigmaIcon, color: "#F24E1E" },
-    { name: "Trello", Icon: SiTrello, color: "#0052CC" },
+    { name: "Microsoft Workspace", Icon: FaMicrosoft, color: "#00A4EF" },
     { name: "Slack", Icon: SiSlack, color: "#4A154B" },
     { name: "Teams", Icon: PiMicrosoftTeamsLogoFill, color: "#6264A7" },
+    { name: "Google Sheets", Icon: SiGooglesheets, color: "#34A853" },
+    { name: "Tableau", Icon: SiTableau, color: "#E97627" },
+    { name: "Excel", Icon: FaFileExcel, color: "#217346" },
+    { name: "Notion", Icon: SiNotion, color: "#000000" },
+    { name: "GHL", Icon: GHLIcon, color: "#188BF6" },
+    { name: "Shopify", Icon: SiShopify, color: "#95BF47" },
+    { name: "Loom", Icon: SiLoom, color: "#625DF5" },
     { name: "Google Workspace", Icon: SiGoogle, color: "#4285F4" },
 
   ],
@@ -82,50 +92,84 @@ export const skills = {
 
 export const experience = [
   {
-    "orgName": "Evallo",
-    "logo": evallo,
-    "role": "Full-Stack Engineer",
-    "duration": "Feb 2024 - Nov 2025",
-    "desc": [
-      "Redesigned and developed end-to-end authentication flows including Signup, Login, Email Verification, OTP logic, and Reset Password with improved UX and full backend integration.",
-      "Developed data visualization dashboards using Chart.js and Recharts to support business analytics.",
-      "Built and integrated complex admin settings features, including a custom sign-up form, an announcement system, and the corresponding back-end APIs.",
-      "Used AWS (EC2/S3) for deployment and asset storage tasks where required.",
-      "Collaborated closely with the UI/UX team to convert design wireframes into responsive, production-ready interfaces and maintain consistency across all frontend modules."
-    ]
+    "orgName": "Majesty Coffee",
+    "logo": [],
+    "role": "E-commerce Virtual Assistant",
+    "duration": "April 2025 - April 2026",
+    "desc": [    ]
+  },
+  {
+    "orgName": "iQor Philippines",
+    "logo": [], 
+    "role": "Customer Service Representative",
+    "duration": "July 2024 - April 2025",
+    "desc": [    ]
   }
 ]
 
 export const projects = [
   {
-    "name": "ShareChef",
-    "about": "A real-time collaborative web application that allows groups to securely pool ingredients and use AI to generate and vote on custom recipes based on strict dietary constraints.",
+    "name": "E-Commerce Tracker",
+    "about": "e-commerce financial tracking system centralizes raw operational data to provide real-time visibility into revenue, expenses, and profit margins, featuring a brand-aligned, fully sanitized user interface designed",
     "logo": LuUtensilsCrossed,
-    "techStack": "Next.js, React, Tailwind CSS, MongoDB, Pusher (WebSockets), NextAuth, Llama 3.3 AI",
-    "desc": [
-      "Engineered a real-time collaborative frontend using Next.js and Pusher WebSockets, enabling multiple users to seamlessly add ingredients and cast votes in live shared rooms with zero-latency optimistic UI updates.",
-      "Integrated Llama 3.3 AI via Groq to dynamically generate structured, personalized recipes based on crowd-sourced ingredients, engineering prompt logic to strictly enforce user-defined dietary restrictions, allergies, and time limits.",
-      "Developed a secure, role-based routing system utilizing NextAuth (Google OAuth) and MongoDB, implementing smart authorization checks to bypass redundant password screens for room hosts while securely gating guest access.",
-      "Optimized data fetching and serialization between the MongoDB backend and Next.js frontend by utilizing Mongoose queries, eliminating heavy document bottlenecks and ensuring instant state synchronization for live voting.",
-      "Designed a highly responsive, modern UI with Tailwind CSS and Lucide icons, focusing on intuitive user experiences like dynamic host-only controls, real-time vote count badges, and animated view transitions."
-    ]
+    "techStack": "Google Sheets",
+    "desc": [    ],
+    "url": "https://docs.google.com/spreadsheets/d/1DWPK5wM4Mfs4S1Lh3JoKAbpfD_lvfFqZ3jCrB0n1Kak/edit?usp=sharing"
+  },
+  {
+    "name": "Personal Portfolio Website",
+    "about": "A personal portfolio website built with Next.js and Tailwind CSS, showcasing my projects, skills, and experience in a visually appealing and responsive design.",
+    "logo": LuUtensilsCrossed,
+    "techStack": "Next.js, Tailwind CSS",
+    "desc": [    ]
+  },
+  {
+    "name": "Bestpresso",
+    "about": "Mockup project is a premium mobile e-commerce application designed to provide coffee enthusiasts with a seamless, high-end experience for customizing and purchasing professional-grade espresso machines and barista accessories.",
+    "logo": LuUtensilsCrossed,
+    "techStack": "Figma",
+    "desc": [    ],
+    "url": "https://www.figma.com/design/fqsyqREHxwcL3mtIhVDdaU/Bestpresso?node-id=0-1&t=o0pMvdoBV1LXhakt-1"
+  },
+  {
+    "name": "Apparel E-commerce Website",
+    "about": "A B2B apparel wholesale platform featuring bulk pricing tiers, automated inventory management, and integrated order tracking.",
+    "logo": LuUtensilsCrossed,
+    "techStack": "React.js, FastAPI, PostgreSQL",
+    "desc": [    ],
+    "url": "https://b2b-apparel-frontend.vercel.app/"
+  },
+  {
+    "name": "E-Commerce P&L and Dashboard",
+    "about": "A comprehensive financial tracking system for e-commerce businesses, centralizing raw operational data to provide real-time visibility into revenue, expenses, and profit margins, featuring a brand-aligned, fully sanitized user interface designed for non-technical users.",
+    "logo": LuUtensilsCrossed,
+    "techStack": "Google Sheets",
+    "desc": [    ],
+    "url": "https://docs.google.com/spreadsheets/d/1xg6djaz31tqIqsjn-PBUH_qLOXeBJYfUNJZLBGA31vM/edit?usp=sharing"
+  },
+  {
+    "name": "Lift & Grip Gym Management System",
+    "about": "A comprehensive gym management system designed to streamline operations, track member progress, and optimize facility utilization.",
+    "logo": LuUtensilsCrossed,
+    "techStack": "Kotlin, Jetpack Compose, Firebase",
+    "desc": [    ],
+    "url": "https://drive.google.com/drive/folders/1ZyKiS4rw0jmX9bq94HTu5MJPs9K4-Wkg?usp=sharing"
   }
 ]
 
 export const education = [
   {
-    course: "Computer Application",
+    course: "Information Technology",
     degree: "Bachelor's",
-    university: "Makhanlal Chaturvedi National University",
-    duration: "Aug 2019 - Jun 2022",
-    logo: mcu
+    university: "Cavite State University - Silang Campus, Philippines",
+    duration: "2023 - 2026",
+    logo: cvsu
   },
   {
-    course: "Full-Stack Development",
-    degree: "Certification",
-    university: " Masai School, Bengaluru",
-    duration: "Jul 2022 - Jul 2023",
-    logo: masai
+    course: "Computer System Servicing",
+    degree: "Senior High School",
+    university: "Dr. Jose P. Rizal Senior High School, Philippines",
+    duration: "2021 - 2023",
+    logo: djprshs
   },
 ]
-

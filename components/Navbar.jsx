@@ -26,18 +26,16 @@ const Navbar = ({ toggle, setToggle }) => {
                 <div className='flex items-center flex-col gap-20 text-[16px] leading-[100%] text-black font-medium'>
                     <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"/"}>Home</Link>
                     <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"/resume"}>Resume</Link>
-                    <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"mailto:iamgauhar.in@gmail.com"}>Contact</Link>
+                    <Link onClick={closeMobileNavbar} className='-rotate-90 opacity-80 hover:opacity-100' href={"mailto:emmanueldabandan2004@gmail.com"}>Contact</Link>
                 </div>
                 <div className='flex flex-col items-center gap-5'>
-                    <Link onClick={closeMobileNavbar} href={"https://github.com/iamgauhar"} target='_blank' className='opacity-80 hover:opacity-100'>
+                    <Link onClick={closeMobileNavbar} href={"https://github.com/emmanuel-dabandan"} target='_blank' className='opacity-80 hover:opacity-100'>
                         <FiGithub size={24} />
                     </Link>
-                    <Link onClick={closeMobileNavbar} href={"https://www.linkedin.com/in/iamgauhar"} target='_blank' className='opacity-80 hover:opacity-100'>
+                    <Link onClick={closeMobileNavbar} href={"https://www.linkedin.com/in/emmanuel-dabandan/"} target='_blank' className='opacity-80 hover:opacity-100'>
                         <FiLinkedin size={24} />
                     </Link>
-                    <Link onClick={closeMobileNavbar} href={"https://x.com/iamgauhar_in"} target='_blank' className='opacity-80 hover:opacity-100'>
-                        <RiTwitterXFill size={24} />
-                    </Link>
+                    
                 </div>
             </div>
         </div>
